@@ -13,7 +13,34 @@
   Output - [{ category: 'Food', totalSpent: 10 }] // Can have multiple categories, only one example is mentioned here
 */
 
+  var spendTotal = {};
+  var transactions = [
+    {
+      itemName : "Rasna",
+      category : "Drink",
+      price : 20,
+      timeStamp : "12-jan"
+    },
+    
+    {
+      itemName : "Jeerasoda",
+      category : "Drink",
+      price : 20,
+      timeStamp : "12-jan"
+    },
+    {
+      itemName : "coke",
+      category : "Drink",
+      price : 20,
+      timeStamp : "12-jan"
+    },
+    
+  ]
 function calculateTotalSpentByCategory(transactions) {
+    for(i = 0;i<transactions.length;i++){
+      var t = transactions[i];
+    }
+  
   return [];
 }
 
