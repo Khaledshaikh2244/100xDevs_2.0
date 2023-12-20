@@ -28,6 +28,6 @@ function kidneyMiddleware(req, res, next) {
 }
 
 app.get('/heart-checkup', userMiddleWare, function (req, res){
- 
+    
     res.send("your heath is healthy ! ");
 }) 
