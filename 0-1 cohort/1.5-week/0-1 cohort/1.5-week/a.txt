@@ -1,1 +1,0 @@
-This is from the External file (from a.txt)
