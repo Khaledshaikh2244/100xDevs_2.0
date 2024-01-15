@@ -20,7 +20,14 @@ setInterval(() => {
 
 
 app.use( function(req , res , next){
-  numberOfRequestsForUser[req.headers["user-id"]] = numberOfRequestsForUser[req.headers["user-id"]] +1  
+  numberOfRequestsForUser[req.headers["user-id"]] = numberOfRequestsForUser[req.headers["user-id"]] +1 ;
+  if(numberOfRequestsForUser[user-id]> 5){
+    res.status(404).send("Too many attempts of request access !");
+  }
+  else{
+    numberOfRequestsForUser[user-id] = 1;
+    next();
+  }
 })
 
 app.get('/user', function(req, res) {
